@@ -1,0 +1,7 @@
+@import '~@angular/material/theming';
+
+header {
+  background: mat-color($mat-blue, 900);
+  color: white;
+  padding: 12px;
+}

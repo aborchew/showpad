@@ -1,0 +1,39 @@
+<h3>New Deck</h3>
+
+<article>
+  <label>Number of Decks</label>
+  <mat-slider
+    max="8"
+    min="1"
+    step="1"
+    thumbLabel="Number of Decks"
+    tickInterval="1"
+    [(ngModel)]="deck_count"
+  ></mat-slider>
+</article>
+
+<article>
+  <label>Number of Players</label>
+  <mat-slider
+    max="6"
+    min="1"
+    step="1"
+    thumbLabel="Number of Players"
+    tickInterval="1"
+    [(ngModel)]="pile_count"
+  ></mat-slider>
+</article>
+
+<article>
+  <label>Hand Size</label>
+  <mat-slider
+    max="11"
+    min="1"
+    step="1"
+    thumbLabel="Hand Size"
+    tickInterval="1"
+    [(ngModel)]="hand_size"
+  ></mat-slider>
+</article>
+
+<button mat-raised-button color="primary" (click)="create()">Create</button>
